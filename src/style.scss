@@ -1,0 +1,56 @@
+@use 'sass:color';
+$bgcolor: rgb(77, 76, 74);
+body {
+    background-color: color.adjust($bgcolor, $lightness: -10%);
+}
+.shopping-app {
+    font-family: verdana, sans-serif;
+    text-align: center;
+    margin: 20px;
+  
+    h1 {
+      color: #eba439;
+    }
+  
+    .all-items, .cart {
+        color: #e6d2d2;
+      margin: 20px 0;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        padding: 8px;
+        border: 1px solid #ddd;
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        max-width: 200px;
+        margin: 0 auto;
+  
+        button {
+          background-color: #28a745;
+          color: white;
+          border: none;
+          padding: 5px;
+          cursor: pointer;
+          
+          &:hover {
+            background-color: #218838;
+          }
+        }
+  
+       
+      }
+    }
+  
+    .cart button {
+      background-color: #dc3545;
+  
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+  }
